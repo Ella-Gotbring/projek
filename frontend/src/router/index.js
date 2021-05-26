@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Feed from '../views/Feed.vue'
 import Flow from '../views/Flow.vue'
 import Signup from '../views/Signup.vue'
-import Signin from '../views/Signin.vue'
+import Login from '../views/Login.vue'
 import Settings from '../views/Settings.vue'
 
 Vue.use(VueRouter)
@@ -25,9 +25,9 @@ const routes = [
     component: Signup
   },
   {
-    path: '/signin',
-    name: 'Signin',
-    component: Signin
+    path: '/login',
+    name: 'Login',
+    component: Login
   },
   {
     path: '/settings',

@@ -3,7 +3,7 @@
     <input type="text" placeholder="Användarnamn" v-model="cert.username" />
     <input type="password" placeholder="Lösenord" v-model="cert.password" />
     <button>Registrera</button>
-    <router-link to="/signin">Redan medlem</router-link>
+    <router-link to="/login">Redan medlem</router-link>
   </form>
 </template>
 

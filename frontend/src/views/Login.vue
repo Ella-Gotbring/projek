@@ -12,7 +12,7 @@
 <script>
 import axios from "axios";
 export default {
- name:"Singin",
+ name: "Login",
   data() {
     return {
       cert: {
@@ -28,7 +28,11 @@ export default {
         this.cert
       );
       if (response.data.token) {
+        axios.defaults.headers.common[
+          "Authorization"
+        ] = `Bearer ${response.data.token}`;
         sessionStorage.setItem("auth", response.data.token);
+        this.$router.push({ name: "Flow" });
       }
     },
   },
